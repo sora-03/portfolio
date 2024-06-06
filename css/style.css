@@ -1,3 +1,60 @@
+/* 全体 */
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 16px;
+  background-color: #fdfdfd;
+  color: #333;
+}
+/* ヘッダー */
 .header {
+  padding: 24px 32px;
+  font-weight: bold;
+  background-color: #75b1a9;
+  color: #fdfdfd;
   text-align: center;
+}
+.header > .header-title {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+.header > .header-subtitle {
+  font-size: 24px;
+}
+
+/* ナビゲーション */
+.nav-menu {
+  display: flex;
+  font-size: 24px;
+}
+.nav-item {
+  flex: 1;
+  padding: 8px;
+  color: #d9b44a;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-link::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  background-position: center;
+  background-size: contain;
+}
+.profile::before {
+  background-image: url("../images/profile.svg");
+}
+.skills::before {
+  background-image: url("../images/skills.svg");
+}
+.works::before {
+  background-image: url("../images/works.svg");
+}
+.contact::before {
+  background-image: url("../images/contact.svg");
 }
