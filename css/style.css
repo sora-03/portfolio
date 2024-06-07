@@ -4,7 +4,7 @@ body {
     "Hiragino Sans", Meiryo, sans-serif;
   font-size: 16px;
   background-color: #fdfdfd;
-  color: #333;
+  color: #4f6457;
 }
 /* ヘッダー */
 .header {
@@ -23,6 +23,9 @@ body {
 }
 
 /* ナビゲーション */
+.nav {
+  margin-bottom: 64px;
+}
 .nav-menu {
   display: flex;
   font-size: 24px;
@@ -46,15 +49,63 @@ body {
   background-position: center;
   background-size: contain;
 }
-.profile::before {
+.nav-item > .profile::before,
+.contents > .profile::before {
   background-image: url("../images/profile.svg");
 }
-.skills::before {
+.nav-item > .skills::before,
+.contents > .skills::before {
   background-image: url("../images/skills.svg");
 }
-.works::before {
+.nav-item > .works::before,
+.contents > .works::before {
   background-image: url("../images/works.svg");
 }
-.contact::before {
+.nav-item > .contact::before,
+.contents > .contact::before {
   background-image: url("../images/contact.svg");
+}
+
+/* メイン  */
+.contents {
+  margin-bottom: 64px;
+}
+.content-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #d9b44a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-title::before {
+  content: "";
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  margin-right: 8px;
+  background-position: center;
+  background-size: contain;
+}
+
+/* フッター */
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 32px;
+  font-weight: bold;
+  background-color: #4f6457;
+  color: #fdfdfd;
+}
+.footer-menu {
+  display: flex;
+}
+.footer-link {
+  margin: 8px 16px;
 }
