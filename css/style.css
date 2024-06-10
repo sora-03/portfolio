@@ -28,6 +28,7 @@ body {
 /* メイン  */
 .main {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto 64px;
 }
 /* ナビゲーション */
@@ -99,13 +100,37 @@ body {
 .content-detail {
   margin-left: 0.8rem;
 }
-td {
-  padding: 0.2rem;
-}
 .table-title {
   width: 4rem;
 }
+tr > .date {
+  width: 4rem;
+}
+/* テーブル全体 */
+table {
+  width: 100%;
+}
+th,
+td {
+  padding: 0.2rem;
+}
 
+/* カード */
+.card-container {
+  display: flex;
+}
+.card {
+  width: 50%;
+  background: #acd0d0;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  margin-inline: 0.8rem;
+}
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
 /* フッター */
 .footer {
   display: flex;
