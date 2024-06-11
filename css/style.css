@@ -104,7 +104,7 @@ body {
   width: 4rem;
 }
 tr > .date {
-  width: 4rem;
+  width: 4.2rem;
 }
 /* テーブル全体 */
 table {
@@ -112,24 +112,35 @@ table {
 }
 th,
 td {
-  padding: 0.2rem;
+  padding: 0.4rem;
 }
 
 /* カード */
 .card-container {
   display: flex;
+  flex-wrap: wrap;
 }
 .card {
-  width: 50%;
+  width: 100%;
+  flex: 1;
   background: #acd0d0;
   border-radius: 0.4rem;
   padding: 0.8rem;
-  margin-inline: 0.8rem;
+  margin: 0.8rem;
 }
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
   text-align: center;
+}
+.card-description {
+  text-align: center;
+  padding: 0.8rem;
+}
+.skills-table > tr > th,
+.skills-table > tr > td {
+  text-align: center;
+  width: calc(100% / 3);
 }
 /* フッター */
 .footer {
@@ -158,5 +169,8 @@ td {
   html {
     /* 1rem = 50pxと再定義 */
     font-size: 80%;
+  }
+  .card {
+    flex: initial;
   }
 }
