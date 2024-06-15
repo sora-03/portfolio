@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
     <div class="wrapper">
         <header class="header">
             <h1 class="header-title">Sora Ohnehara's portfolio</h1>
@@ -20,20 +23,20 @@
             <nav class="nav">
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a class="nav-link profile" href="#">Profile</a>
+                        <a class="nav-link profile" href="#profile">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link skills" href="#">Skills</a>
+                        <a class="nav-link skills" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link works" href="#">Works</a>
+                        <a class="nav-link works" href="#works">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contact" href="#">Contact</a>
+                        <a class="nav-link contact" href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
-            <section class="contents">
+            <section class="contents" id="profile">
                 <h2 class="content-title profile">Profile</h2>
                 <div class="content-detail">
                     <div>
@@ -50,13 +53,13 @@
                             2020/03： 岩手大学教育学部　卒業<br>
                             2021/04 ~ 2022/03：仙台市立川平小学校に教員として勤務<br>
                             2022/05 ~ 現在：イーストライズ株式会社に所属<br>
-                            フロント/サーバエンジニアとして業務用Webアプリケーションを中心とした開発に従事するとともに、
+                            フロント/サーバエンジニアとしてWebアプリケーションを中心とした開発に従事するとともに、
                             社内システム管理者として社内の機器の管理やサーバ・ネットワークなどの運用や保守などの業務も行っている。
                         </p>
                     </div>
                 </div>
             </section>
-            <section class="contents">
+            <section class="contents" id="skills">
                 <h2 class="content-title skills">Skills</h2>
                 <div class="content-detail">
                     <div class="card-container">
@@ -216,7 +219,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contents">
+            <section class="contents" id="works">
                 <h2 class="content-title works">Works</h2>
                 <div class="content-detail">
                     <p class="works-content">
@@ -227,7 +230,7 @@
                     </p>
                 </div>
             </section>
-            <section class="contents">
+            <section class="contents" id="contact">
                 <h2 class="content-title contact">Contact</h2>
                 <div class="content-detail contact-content">
                     <p>何かありましたらお気軽にご連絡いただければ幸いです。</p>
@@ -237,21 +240,24 @@
         </main>
         <footer class="footer">
             <ul class="footer-menu">
-                <li class="footer-link">
-                    <a class="profile" href="#">Profile</a>
+                <li class="footer-item">
+                    <a class="footer-link profile" href="#profile">Profile</a>
                 </li>
-                <li class="footer-link">
-                    <a class="skills" href="#">Skills</a>
+                <li class="footer-item">
+                    <a class="footer-link skills" href="#skills">Skills</a>
                 </li>
-                <li class="footer-link">
-                    <a class="works" href="#">Works</a>
+                <li class="footer-item">
+                    <a class="footer-link works" href="#works">Works</a>
                 </li>
-                <li class="footer-link">
-                    <a class="contact" href="#">Contact</a>
+                <li class="footer-item">
+                    <a class="footer-link contact" href="#contact">Contact</a>
                 </li>
             </ul>
         </footer>
     </div>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="./js/index.js"></script>
 
 </html>

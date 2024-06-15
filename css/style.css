@@ -9,6 +9,72 @@ body {
   background-color: #fdfdfd;
   color: #4f6457;
 }
+
+/* ローディング画面 */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #acd0d0;
+  position: fixed;
+  z-index: 9999;
+}
+.spinner {
+  width: 8rem;
+  height: 8rem;
+  margin: 100px auto;
+  background-color: #d9b44a;
+
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes sk-bounce {
+  0%,
+  100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%,
+  100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
 /* ヘッダー */
 .header {
   padding: 1.2rem 1.6rem;
@@ -37,7 +103,7 @@ body {
 }
 .nav-menu {
   display: flex;
-  font-size: 1, 2rem;
+  font-size: 1.2rem;
 }
 .nav-item {
   flex: 1;
@@ -46,8 +112,17 @@ body {
 }
 .nav-link {
   display: flex;
+  padding-bottom: 0.4rem;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0%) 3px
+      no-repeat,
+    linear-gradient(90deg, transparent 50%, currentColor 0) bottom /
+      calc(2 * var(--d, 0%)) 3px no-repeat;
+  transition: 0.5s;
+}
+.nav-link:hover {
+  --d: 51%;
 }
 .nav-link::before {
   content: "";
@@ -169,7 +244,15 @@ td {
   display: flex;
 }
 .footer-link {
-  margin: 0.4rem 0.8rem;
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(currentColor 0 0) 100% 100% / var(--d, 0%) 3px
+      no-repeat,
+    linear-gradient(-90deg, transparent 50%, currentColor 0) bottom /
+      calc(2 * var(--d, 0%)) 3px no-repeat;
+  transition: 0.5s;
+}
+.footer-link:hover {
+  --d: 51%;
 }
 
 /* ↓スマホ（横幅550px以下）の場合 */
