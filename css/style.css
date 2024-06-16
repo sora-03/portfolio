@@ -129,9 +129,10 @@ body {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
-  margin-right: 8px;
+  margin-right: 0.4rem;
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
 }
 .nav-item > .profile::before,
 .contents > .profile::before {
