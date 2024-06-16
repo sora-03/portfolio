@@ -181,6 +181,9 @@ body {
 .career-detail {
   padding-left: 0.2rem;
 }
+.company-link:hover {
+  text-decoration: underline #4f6457;
+}
 
 /* テーブル全体 */
 table {
