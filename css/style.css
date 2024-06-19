@@ -186,9 +186,14 @@ td {
 }
 
 /* Profile */
+.profile-title {
+  display: inline-block;
+  width: 4rem;
+}
 .career-area {
   display: flex;
-  padding-left: 0.2rem;
+  padding-left: 0.4rem;
+  margin-bottom: 0.4rem;
 }
 .career-date {
   flex: 1;
