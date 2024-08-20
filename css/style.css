@@ -233,6 +233,9 @@ td {
   width: calc(100% / 3);
 }
 /* Works */
+.works-content {
+  margin-bottom: 1rem;
+}
 .works-content-detail {
   margin-bottom: 0.2rem;
 }
